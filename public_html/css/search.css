@@ -1,0 +1,69 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: #141414;
+    height: 100%;
+}
+
+header{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,0.9);
+}
+
+.container-search{
+    position: relative;
+    float: right;
+    height: 40px;
+    right: 5%;
+    top: calc(50% - 20px);
+    max-width: 350px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.icon-search{
+    float: left;
+    width: 30px;
+    position: relative;
+    top: calc(50% - 15px);
+    cursor: pointer;
+}
+
+.inpt-search{
+    display: none;
+    color: #FFF;
+    font-size: 20px;
+    height: 100%;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    width: calc(100% - 40px);
+    /*transition: all ease-in-out 0.5s;*/
+}
+
+.inpt-search:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.inpt-search::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.inpt-search:-moz-placeholder { /* Firefox 18- */
+    color: rgba(255,255,255,0.5);
+}
+
+.inpt-search::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(255,255,255,0.5);
+}
+
+.inpt-search:-ms-input-placeholder {  
+    color: rgba(255,255,255,0.5);
+}
